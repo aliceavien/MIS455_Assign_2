@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Input</title>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/page1.html">Food</a></li>
+        <li><a class="active" href="/inputPage.html">Suggestion</a></li>
+    </ul>
+
+    <div class="formContainer">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter First Name ..." required />
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter Last Name ..." required />
+        <label for="price">Your Budget in $</label>
+        <input type="number" name="price" id="markBox" placeholder="Enter Your Amount in dollars" required />
+        <button type="submit" class="submitBtn" onclick="processMark()">Submit</button>
+    </div>
+
+    <div class="MarkContainer" id="markContainer" onclick="disappear()">
+
+    </div>
+
+    <script src="/input.js"></script>
+</body>
+
+</html>
